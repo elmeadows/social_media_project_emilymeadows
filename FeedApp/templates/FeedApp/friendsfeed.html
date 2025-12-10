@@ -24,7 +24,7 @@
             Likes: &nbsp {{l}}
             </button>
         </td>
-        <td>Comments: &nbsp <a href="{% url 'FeedApp:comments' p.id %}">{{c}}</a>&nbsp&nbsp</td>
+        <td>Comments: &nbsp <a href="{% url 'FeedApp:comments' p.id %}" style="color: green;">{{c}}</a>&nbsp&nbsp</td>
     </tr>
 </tr>
 {% endfor %}

@@ -1,18 +1,33 @@
 {% extends "FeedApp/base.html" %}
 
 {% block page_header %}
-    <div class="jumbotron" align="center">
-        <img src="wandererstree.jpg" class="rounded float-left">
-        <img src="wandererstree.jpg" class="rounded float-right">
-        <div style="background-color: darkgreen">
-        <h1 class="display-3">Wanderers</h1>
+<style>
+    .jumbotron-image{
+        background-image: url("/mountain.webp");
+        background-size: cover;
+        position: relative
+    }
+    .footer-images{
+        position: relative;
+        bottom: 0;
+        width: 10%;
+        text-align: center;
+        padding: 0.5rem
+    }
+</style>
+    <div class="jumbotron jumbotron-image" align="center">
+        <div>
+        <h1 class="display-3">Adventurers</h1>
         </div>
             <p class="lead" style="color:green">
-                A Social Network for those who appreciate the outdoors.<br>
-                "Not all who wander are lost," so come wander with us!
+                A Social Network to find friends who appreciate the outdoors.<br>
+                For those who believe "Not all who wander are lost," and want to wander together!
             </p>
 
             <a class="btn btn-outline-success" href="{% url 'users:register' %}"
             role="button">Join Now &raquo;</a>
     </div>
+ <div style="text-align:center">
+    <img src="wandererstree.jpg" class="footer-images">
+</div>
 {% endblock page_header %}
