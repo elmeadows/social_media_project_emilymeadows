@@ -4,4 +4,4 @@
 python manage.py migrate
 
 # Start gunicorn
-gunicorn social_media_project.wsgi:application
+gunicorn FeedProject.wsgi:application
