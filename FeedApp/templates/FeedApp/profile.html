@@ -8,8 +8,9 @@
 
 <form action="{% url 'FeedApp:profile' %}" method="post">
     {% csrf_token %}
+    {% bootstrap_form form %}
     <br><br>
-    <button name="submit" class="btn btn-outline-primary">Update</button>
+    <button name="submit" class="btn btn-outline-success">Update</button>
 </form>
 
 

@@ -14,7 +14,7 @@
         {% csrf_token %}
         {% bootstrap_form form %}
 
-        <button class="btn btn-outline-primary" name="submit">Log in</button>
+        <button class="btn btn-outline-success" name="submit">Log in</button>
         <!--include a hidden form element, 'next'; the value argument 
             tells Django where to redirect the user after they’ve logged in successfully.-->
         <input type="hidden" name="next"

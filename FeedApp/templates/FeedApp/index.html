@@ -1,12 +1,18 @@
 {% extends "FeedApp/base.html" %}
 
 {% block page_header %}
-    <div class="jumbotron">
-       <h1 class="display-3">Feed</h1>
-            <p class="lead">A Social Network where you can be you.
+    <div class="jumbotron" align="center">
+        <img src="wandererstree.jpg" class="rounded float-left">
+        <img src="wandererstree.jpg" class="rounded float-right">
+        <div style="background-color: darkgreen">
+        <h1 class="display-3">Wanderers</h1>
+        </div>
+            <p class="lead" style="color:green">
+                A Social Network for those who appreciate the outdoors.<br>
+                "Not all who wander are lost," so come wander with us!
             </p>
 
-            <a class="btn btn-lg btn-outline-primary" href="{% url 'users:register' %}"
+            <a class="btn btn-outline-success" href="{% url 'users:register' %}"
             role="button">Join Now &raquo;</a>
     </div>
 {% endblock page_header %}

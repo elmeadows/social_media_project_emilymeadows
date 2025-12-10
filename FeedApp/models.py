@@ -36,6 +36,9 @@ class Post(models.Model):
     image = models.ImageField(upload_to='images',blank=True)
     date_posted = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"{self.description}"
+
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     username = models.ForeignKey(User, related_name='details', on_delete=models.CASCADE)
