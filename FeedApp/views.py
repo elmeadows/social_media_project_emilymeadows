@@ -13,7 +13,7 @@ from django.http import Http404
 # Django looks for a function called index() in the views.py file. 
 
 def index(request):
-    """The home page for Learning Log."""
+    """The home page."""
     return render(request, 'FeedApp/index.html')
 
 
